@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src = "script.js"></script>
+</head>
+<body>
+    <div class = "top-part">
+        <p class = "calc" >calc</p>
+        <div class="theme">
+            <p class = "theme-text">THEME</p>
+            <input id="theme-1" name="state-d" type="radio" checked="checked" />
+            <label for="theme-1" onclick="">1</label>
+          
+            <input id="theme-2" name="state-d" type="radio" />
+            <label for="theme-2"  onclick="">2</label>
+          
+            <input id="theme-3" name="state-d" type="radio" />
+            <label for="theme-3" onclick="">3</label>
+        </div>
+        
+    </div>
+
+
+
+    <div class = "mid-part">
+            <p class = "screen" id ="screen" >0</p>
+    </div>
+
+
+
+    <div class = "bot-part">
+        <ul class ="small-buttons">
+                <button class="grid-item"       id="7" onClick="typeNumber(7)" value = "7">7</button>
+                <button class="grid-item"       id="8" onClick="typeNumber(8)" value = "8">8</button>
+                <button class="grid-item"       id="9" onClick="typeNumber(9)" value = "9">9</button>
+                <button class="grid-item-del"   id="DEL" onClick = "delNumber()">DEL</button>
+                <button class="grid-item"       id="4" onClick="typeNumber(4)" value = "4">4</button>
+                <button class="grid-item"       id="5" onClick="typeNumber(5)" value = "5">5</button>
+                <button class="grid-item"       id="6" onClick="typeNumber(6)" value = "6">6</button>
+                <button class="grid-item"       id="Add" onClick = "addOperation()">+</button>
+                <button class="grid-item"       id="1" onClick="typeNumber(1)" value = "1">1</button>
+                <button class="grid-item"       id="2" onClick="typeNumber(2)" value = "2">2</button>
+                <button class="grid-item"       id="3" onClick="typeNumber(3)" value = "3">3</button>
+                <button class="grid-item"       id="Subtract" onClick = "subOperation()">-</button>
+                <button class="grid-item"       id="Dot" onClick = "dotButton()">.</button>
+                <button class="grid-item"       id="0" onClick="typeNumber(0)" value = "0">0</button>
+                <button class="grid-item"       id="Divide" onClick = "divOperation()">/</button>
+                <button class="grid-item"       id="Multiply" onClick = "mulOperation()">x</button>
+                <button class = "butt-1"        id="Reset" onClick = "reset()">RESET</button>
+                <button class = "butt-2"        id="Result" onClick = "eqOperation()">=</button>
+        </ul>
+    </div>
+
+</body>
+</html>
